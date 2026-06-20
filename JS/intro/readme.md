@@ -23,4 +23,4 @@ identifiers are uique label assigned to the variable.
 Non-primitive structures store memory pointers pointing to where the actual data resides. 
 -   Object: Collections of key-value pairs used to model real-world entities (e.g., `{ name: "Alice", age: 25 }`).
 -   Array: An ordered list of values mapped by numerical indexes (e.g., `[1, 2, 3]`).
--   sFunction: Reusable blocks of executable code that can be stored inside variable
+-   Function: Reusable blocks of executable code that can be stored inside variable
