@@ -1,4 +1,4 @@
-/*ccomparison operators evaluate only true/false statementas
+/*comparison operators evaluate only true/false statements
 
 1. Equality ==
 2. Strict Equality === --> recommended
@@ -8,20 +8,30 @@ Strict Inequality !==  --> recommended
 */
 
 
-let num1='33'
-let num2=33
-let strictEqual=num1===num2  //bool
-console.log(`num1=${num1}===num2=${num2} Ans ${strictEqual} its type is ${typeof strictEqual}`)
-let nonStrictEquality=num1==num2
-console.log(`num1=${num1}==num2=${num2} Ans ${nonStrictEquality} its type is ${typeof nonStrictEquality}`)
+/*Logical operators*
 
-let val1= "30"
-let val2= 30
-//different types aren't equal
+Logical AND(&&)
+
+Logical OR(||
+
+Logical NOT(!)
+*/
 
 
-let strictInequality=val1!==val2
-console.log(`val1${val1}===val2=${val2} Ans ${strictInequality} its type is ${typeof strictInequality}`)
+let val1= true
+let val2=true
+let result1=val1 && val2//bool
+console.log(`val1=&{val1} val2=${val2} val1 && val2=${val1 && val2}`)
+let mercyAge=15
+let mercyBalance=50000
 
-let ineQuality=val1!=val2
-console.log(`val1=${val1}===val2=${val2} Ans ${ineQuality} its type is ${typeof ineQuality}`)
+// if mercy's age is greater than 18 & has more than 20k in her account
+
+let isGreaterThan18=mercyAge
+console.log(`is mercy's age greater than 18 ${isGreaterThan18}`)
+let hasMoreThan20k=mercyBalance > 20000
+console.log(`mercy has more than 20k ${hasMoreThan20k}`)
+console.log("mercy's age is greater than 18 & has more than 20k in her account ${isGreaterThan18 && hasMoreThan20k}")
+let simplified=mercyAge>18&&mercyBalance>20000
+console.log(`simlified${simplified}`)
+console.log(`further simplification is ${mercyAge > 18 && mercyBalance > 20000}`)
