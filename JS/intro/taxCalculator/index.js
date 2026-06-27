@@ -104,8 +104,8 @@ else {
     nssf_tier = 'NSSF Tier 3 (Above sh 108,000)';
 }
 
-// Net salary = Gross salary - PAYE tax - NSSF contribution
-let netSal = grossMonthlySal - paye - nssf;
+// Net salary = Gross salary - PAYE tax - deducts
+let netSal = grossMonthlySal - paye - nssf-shif-housingLevy;
 let totalDeducts= shif+nssf+housingLevy+paye;
 // 6. DISPLAY RESULTS
 alert(`Gross Salary: KES ${grossMonthlySal}
