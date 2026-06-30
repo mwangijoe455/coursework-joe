@@ -10,12 +10,12 @@ to call a function means to execute the written code block of code
 function name of variable ():*/
 
 
-//function timeAlert(){
+function timeAlert(){
     //const date = new Date();
     //alert(`time stamp: ${date.toLocaleString("en-KE", {timeZone:"Africa/Nairobi"})}`);
-//}
+}
 
-//timeAlert();  // calling a function
+timeAlert();  // calling a function
 
 //function to find area of a triangle
 
@@ -27,7 +27,7 @@ function areaOfTriangle(base, height){
     
 }
 
-/* scenario: call the areaof triangle function don't pass any arguments <>
+// scenario: call the areaof triangle function don't pass any arguments <>
 
 areaOfTriangle();
 
@@ -47,7 +47,7 @@ areaOfTriangle(base1, height1);
 //scenario5: create a variable base2="joe" and height2= true
 
 let base2='joe', height2= true;
-areaOfTriangle(base2, height2); */
+areaOfTriangle(base2, height2); 
 
 // return; statement
 
