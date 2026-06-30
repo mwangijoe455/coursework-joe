@@ -43,7 +43,7 @@ function sayMyName() {
 
         // 5. Block  or local scope variable
         let nickName = "Mwas";
-        console.log("Line 46:", fullName);
+        console.log("Line 46:", nickName);
     }
 
     // 6. After the if block
