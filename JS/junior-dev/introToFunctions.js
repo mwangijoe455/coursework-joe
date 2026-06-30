@@ -27,7 +27,7 @@ function areaOfTriangle(base, height){
     
 }
 
-// scenario: call the areaof triangle function don't pass any arguments <>
+/* scenario: call the areaof triangle function don't pass any arguments <>
 
 areaOfTriangle();
 
@@ -47,7 +47,79 @@ areaOfTriangle(base1, height1);
 //scenario5: create a variable base2="joe" and height2= true
 
 let base2='joe', height2= true;
-areaOfTriangle(base2, height2);
+areaOfTriangle(base2, height2); */
 
+// return; statement
 
+function sayMyName(){
+    let firstName=`joe`; //first statement
+    console.log(`first name ${firstName}`);
+    let secondName=`mwangi`;
+    return;
+    console.log(`second name is ${secondName}`);
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue= sayMyName();
+    console.log(`function returned ${sayMyNameValue}`); // Fixed: changed sayMyName to sayMyNameValue
+
+    // scenario1: leave at is and see results.( any function without a return statement is undefined)
+    //scenario2: after second statement inside function put a return
+function sayMyName(){
+    let firstName=`joe`; 
+    console.log(`first name ${firstName}`);
+    return;
+    let secondName=`mwangi`;
+    console.log(`second name is ${secondName}`);
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue2= sayMyName(); 
+    console.log(`function returned ${sayMyNameValue2}`); 
+
+    //scenario3: after the 3rd statement put a return statement
+function sayMyName(){
+    let firstName=`joe`; 
+    console.log(`first name ${firstName}`);
+    let secondName=`mwangi`;
+    console.log(`second name is ${secondName}`);
+    return;
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue3= sayMyName(); 
+    console.log(`function returned ${sayMyNameValue3}`); 
+
+    //scenario4: put a return statement anywhere inside function and retun a string of your choice
+function sayMyName(){
+    let firstName=`joe`; 
+    console.log(`first name ${firstName}`);
+    let secondName=`mwangi`;
+    console.log(`second name is ${secondName}`);
+    return "My name is Joe Mwangi"; 
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue4= sayMyName(); 
+    console.log(`function returned ${sayMyNameValue4}`); 
+
+    // scenario5: return a number of your choice anywhere inside the function
+    function sayMyName(){
+    let firstName=`joe`; 
+    console.log(`first name ${firstName}`);
+    let secondName=`mwangi`;
+    console.log(`second name is ${secondName}`);
+    return 1000; 
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue5= sayMyName(); 
+    console.log(`function returned ${sayMyNameValue5}`); 
+
+    // scenario6: put a return  statement and return a boolean of your choice
+function sayMyName(){
+    let firstName=`joe`; 
+    console.log(`first name ${firstName}`);
+    let secondName=`mwangi`;
+    console.log(`second name is ${secondName}`);
+    return false; 
+    let fullName=`${firstName}  ${secondName}`;
+    console.log(`names are: ${fullName}`);}
+    let sayMyNameValue6= sayMyName(); 
+    console.log(`function returned ${sayMyNameValue6}`); 
 
