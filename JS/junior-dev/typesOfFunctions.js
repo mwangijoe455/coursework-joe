@@ -54,3 +54,26 @@ const watts = function(I, V) {
 (function(I, V) {
     console.log(I * V);  // power = joules per second
 })(4, 5);  // 20
+
+/*creating an arrow function:
+1. create an anonymous function.
+2. remove the function keyword
+3. between the () and {} put an arrow =>
+4. good practise to have variable as const*/
+
+// Original anonymous function
+let power = function(I, V) {
+    return I * V;
+};
+
+// Converted to arrow function
+const power = (I, V) => {
+    return I * V;
+};
+
+// Even shorter version (implicit return)
+const power = (I, V) => I * V;
+
+// Test
+console.log(power(2, 3));  // 6
+console.log(power(4, 5));  // 20
