@@ -30,9 +30,11 @@ testAppendFile();*/
 
 const fs = require('fs');  // node js file system (as global variable)
 
+ 
+
 function myApp() {
     let fileData = `writing \n`;
-    let fileName = `${Date.now()}.txt`;
+    let fileName = `${Date.now().toString()}.txt`;
     let cb = (error) => {};  // void function on callback
     
     let i;
@@ -41,4 +43,12 @@ function myApp() {
     }
     fs.writeFile(fileName, fileData, cb);
 }
-myApp(); 
+function main(){
+    let k;
+    for(k=0; k<=2; k++){
+         myApp();
+}
+    }
+    main();
+
+   
