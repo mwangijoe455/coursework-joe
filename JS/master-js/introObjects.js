@@ -19,7 +19,7 @@ why objects are useful?
 */
 
  //example:
-
+/*
  const studentName=`Joe`;
  const studentAge= 26;
  const studentPhone =`+254 714 648 540`;
@@ -47,7 +47,7 @@ why objects are useful?
     announce: function(){
         alert(`joe mwangi gracing you with his presence`)
     },
- };
+ };*/
 
  /* create an object called car. should have these properties:
  name, model, topspeed, engine info., 
@@ -88,3 +88,52 @@ Number of Cylinders: ${myFavoriteCar.numberOfCylinders}`);
 };
 
 myFavoriteCar.alertInfo();
+
+console.log(`my  car datatype ${typeof myFavoriteCar}`);
+console.log(myFavoriteCar);
+console.log(`my  car datatype ${typeof myFavoriteCar}`);
+console.log("--Engine Info Table--");
+console.table(myFavoriteCar.engineInfo);
+
+/*
+2 ways of accessing object properties:
+i. dot notation--doesn't work for everything
+    does not work for properties which are numbers,
+    string with spaces starting with a number or special symbols
+    can only access properties that follow variable naming
+
+ii. bracket notation--> works for everything
+accesses properties using variables
+
+for each property access it using 
+both notation and bracket notation
+*/ 
+
+
+
+//dot notation
+console.log("Name:", myFavoriteCar.name);
+console.log("Model:", myFavoriteCar.model);
+console.log("Top Speed:", myFavoriteCar.topspeed);
+console.log("Company:", myFavoriteCar.company);
+console.log("Number of Cylinders:", myFavoriteCar.numberOfCylinders);
+console.log("Engine Name:", myFavoriteCar.engineInfo.engine_name);
+console.log("Cylinders:", myFavoriteCar.engineInfo.cylinders);
+console.log("Horse Power:", myFavoriteCar.engineInfo.horse_power);
+console.log("Transmission:", myFavoriteCar.engineInfo.transmission);
+console.log("Engine Capacity:", myFavoriteCar.engineInfo.engine_capacity);
+console.log("Engine Manufacturer:", myFavoriteCar.engineInfo.engine_manufacturer);
+
+// bracket notation
+console.log("Name:", myFavoriteCar["name"]);
+console.log("Model:", myFavoriteCar["model"]);
+console.log("Top Speed:", myFavoriteCar["topspeed"]);
+console.log("Company:", myFavoriteCar["company"]);
+console.log("Number of Cylinders:", myFavoriteCar["numberOfCylinders"]);
+console.log("Engine Name:", myFavoriteCar["engineInfo"]["engine_name"]);
+console.log("Cylinders:", myFavoriteCar["engineInfo"]["cylinders"]);
+console.log("Horse Power:", myFavoriteCar["engineInfo"]["horse_power"]);
+console.log("Transmission:", myFavoriteCar["engineInfo"]["transmission"]);
+console.log("Engine Capacity:", myFavoriteCar["engineInfo"]["engine_capacity"]);
+console.log("Engine Manufacturer:", myFavoriteCar["engineInfo"]["engine_manufacturer"]);
+
