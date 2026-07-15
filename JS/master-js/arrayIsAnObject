@@ -1,0 +1,62 @@
+/*
+create an object that behaves like an array
+=>1. inside the array; give it < any name>
+    inside the array, give it 2 digits
+    <0> any digit
+    <1> any digit
+
+  2. create an object any name;inside the object have keys
+    0: <any digit> 
+    1: <any digit>
+    for the object create the length key. have it as size of <object keys>
+    3.console.table(); you should see they're the same
+*/
+
+// try to recreate pop method
+
+const ar=[20,5];
+const arObj ={
+    0: 20,
+    1:5,
+    length: 2,
+
+push: function(newItem){
+    const key = this.length; //current key
+    this[key]= newItem; // element added tpo that key
+    this.length=this.length+1;  //increment the length
+},
+length: 2,
+};
+console.table(ar);
+console.table(arObj);
+
+const node1 ={
+    location: `CBD`,
+};
+const node2={
+    location: `Machakos`,
+
+};
+const node3={
+    location=`Mombasa`,
+};
+
+node1.nodeA = node2;
+node1.nodeB =node3;
+
+node2.nodeA = node1;
+node2.nodeB =node3;
+
+node2.nodeA = node1;
+node2.nodeB =node3;
+
+
+/*
+push method
+arr.push(11);
+i. firstly a new key is created
+ii. element is added to the key
+iii. the length of the array is increamented
+ */
+
+
