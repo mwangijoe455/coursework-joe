@@ -1,5 +1,5 @@
 /*
-DOM Acess using:
+DOM Access using:
 
 i. querySlector
 ii. documentGet<.....>
@@ -79,9 +79,21 @@ function replace(){
   `;
   document.querySelector('#div1').innerHTML=newHtml;
 }
+
 function updateFruits(){
-  console.log(`update fruits clicked`);
+
+const fruitElements =document
+            .querySelector(`#div1`);
+            .querySelectorAll(`.list-item`);   // lists all items
+
+    let i;
+    for(i=0; i<fruitElements.length; i++){
+        const singleFruitElement = fruitElements[i];
+        singleFruitElement.innerText =otherFruits[i];
+    }
+
 }
+
 
 
 
