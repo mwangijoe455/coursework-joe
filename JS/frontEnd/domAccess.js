@@ -83,7 +83,7 @@ function replace(){
 function updateFruits(){
 
 const fruitElements =document
-            .querySelector(`#div1`);
+            .querySelector(`#div1`)
             .querySelectorAll(`.list-item`);   // lists all items
 
     let i;

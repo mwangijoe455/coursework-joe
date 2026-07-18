@@ -17,7 +17,8 @@ function mouseOverAlert(cats){
     console.log(cats);
     console.log(`mouse over`, Date.now());
 }
-
+clickAlert();
+mouseOverAlert();
 /*
 create a button:
 1. attach a click event which shows an alert
