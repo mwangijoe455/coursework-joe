@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wordly Dictionary SPA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Wordly Dictionary</h1>
+            <p>
+                Search any English word and discover its meaning instantly.
+            </p>
+        </header>
+        <section class="search-section">
+            <form id="searchForm">
+                <input
+                    type="text"
+                    id="wordInput"
+                    placeholder="Enter a word..."
+                    autocomplete="off"
+                    required>
+                <button type="submit">
+                    Search
+                </button>
+            </form>
+        </section>
+        <section class="theme-section">
+            <button id="themeBtn">Toggle Theme</button>
+        </section>
+
+        <section>
+            <p id="errorMessage"></p>
+        </section>
+        <section id="result">
+
+            <div class="welcome-card">
+                <h2>Welcome!</h2>
+                <p>
+
+                    Enter any English word above and click
+                    <strong>Search</strong>.
+
+                </p>
+
+                <p>
+
+                    The application will retrieve information from
+                    the Dictionary REST API without refreshing
+                    the webpage.
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="saved-section">
+
+            <h2>Saved Words</h2>
+
+            <p class="saved-info">
+
+                Your favourite words will appear below.
+
+            </p>
+
+            <ul id="savedWords">
+
+            </ul>
+
+        </section>
+
+        <footer>
+
+            <p>
+
+                Wordly Dictionary SPA |
+                Built with HTML, CSS & JavaScript
+
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
