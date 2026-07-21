@@ -1,0 +1,15 @@
+{
+  "name": "user-merge-lab",
+  "version": "1.0.0",
+  "description": "Lab: Analyzing Data with Modules and Syntax",
+  "main": "./index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "datejs": "^1.0.0-rc3"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
