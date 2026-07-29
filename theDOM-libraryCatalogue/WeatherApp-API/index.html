@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Weather Alerts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+
+            <div class="logo">
+                🌦️
+            </div>
+
+            <div>
+                <h1>US Weather Alerts</h1>
+                <p class="subtitle">
+                    National Weather Service Alert Dashboard
+                </p>
+            </div>
+
+        </header>
+        <section class="search-card">
+
+            <h2>Search Weather Alerts</h2>
+
+            <p class="description">
+                Enter a valid two-letter U.S. state abbreviation to retrieve
+                active weather alerts from the National Weather Service.
+            </p>
+
+            <div class="search-box">
+
+                <input
+                    type="text"
+                    id="stateInput"
+                    maxlength="2"
+                    placeholder="Example: CA, TX, NY">
+
+                <button id="searchBtn">
+                    🔍 Get Alerts
+                </button>
+
+            </div>
+
+        </section>
+        <div id="loading" class="loading hidden">
+            <div class="spinner"></div>
+            Fetching weather alerts...
+        </div>
+        <div id="message"></div>
+        <section id="alerts">
+
+        </section>
+        <footer>
+
+            <hr>
+
+            <p>
+                Data provided by the
+                <strong>National Weather Service API</strong>
+            </p>
+
+            <p>
+                Built using HTML, CSS, JavaScript & Fetch API
+            </p>
+
+        </footer>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

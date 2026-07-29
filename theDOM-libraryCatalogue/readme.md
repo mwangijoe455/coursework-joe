@@ -1,4 +1,4 @@
- 📚 Bookstore Manager
+Bookstore Manager
 
 ## Overview
 
