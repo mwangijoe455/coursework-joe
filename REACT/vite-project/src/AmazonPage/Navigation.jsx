@@ -8,9 +8,9 @@ import logo from './assets/amazon-logo.png';
 
 function Navigation(){
     return(
-        <div>
+        <div className='nav'>
             <img src={logo} width='70px'/>
-            <h2>Navigation section</h2>
+            <input placeholder='Search'/>
         </div>
     );
 }

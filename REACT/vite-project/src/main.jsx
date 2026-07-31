@@ -1,5 +1,3 @@
-import { StrictMode } from 'react';
-import { createRoot } from 'react-dom/client';
 
 /*
 REACT exercise:
@@ -71,10 +69,17 @@ createRoot(document.getElementById('root')).render(
 );
 */
 
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
 import Navigation from './AmazonPage/Navigation';
+import FilterList from './AmazonPage/FilterList';
+import ItemCard from './AmazonPage/ItemCard';
+import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Navigation/>
+    <FilterList/>
+    <ItemCard/>
   </StrictMode>
 );
