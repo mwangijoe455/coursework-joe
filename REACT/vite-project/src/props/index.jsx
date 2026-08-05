@@ -16,7 +16,7 @@ function Parent(){
     const amount = 2000;
     const isOk = true;
     const notSet = null;
-
+    const colors=['blue', 'green', 'yellow'];
 
     const car={
         model: 'renault truck',
@@ -26,8 +26,6 @@ function Parent(){
         },
     };
 
-    const colors=['blue', 'green', 'yellow'];
-    
     return(
         <div>
             <h1>I am the parent component</h1>

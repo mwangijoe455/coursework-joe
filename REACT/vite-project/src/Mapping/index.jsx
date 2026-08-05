@@ -21,7 +21,7 @@ POP vs PUSH vs MAP:
 - map()  : Creates NEW array (doesn't change original)
 
  BEST PRACTICE: Use .map() for rendering lists in React
-BAD PRACTICE: Using for loops to render lists directly
+ BAD PRACTICE: Using for loops to render lists directly
 */
 
 import React from 'react';
@@ -32,7 +32,7 @@ const colors = [2, 7, 23, 45, 463, 54];
 const powersOfNums = colors.map((n) => n * n); // [4, 49, 529, 2025, 214369, 2916]
 const justMap = colors.map((n) => 'cats and dogs');
 
-function singleColor(c, i) {
+function SingleColor(c, i) {
   return (
     <div key={i}>
       for index <b>{i}</b> color is <b>{c}</b>
@@ -40,7 +40,7 @@ function singleColor(c, i) {
   );
 }
 
-function singleColorComponent(props) {
+function SingleColorComponent(props) {
   const { c, i } = props;
 
   return (
