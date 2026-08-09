@@ -1,10 +1,10 @@
 
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import StopWatch from "./SideEffectsConditions/StopWatch"; 
+import GithubProject from "./GithubProject/index"; 
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
-    <StopWatch  /> 
+    <GithubProject /> 
   </StrictMode>
 );
