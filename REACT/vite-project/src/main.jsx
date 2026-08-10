@@ -1,10 +1,9 @@
-
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
-import GithubProject from "./GithubProject/index"; 
+import Routing from "./Routing";
 
 createRoot(document.getElementById("root")).render(
-  <StrictMode>
-    <GithubProject /> 
-  </StrictMode>
+    <StrictMode>
+        <Routing /> 
+    </StrictMode>
 );
