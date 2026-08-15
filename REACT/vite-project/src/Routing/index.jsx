@@ -11,7 +11,7 @@ function Routing() {
                 <Route path="/" element={<Home/>}/>
                 <Route path="/about" element={<About/>}/> 
                 <Route path="/crazy/route/2334443" element={<CrazyRoute/>}/>
-                <Route path='' element={Page404}/>
+                <Route path='*' element={<Page404/>}/>
             </Routes>
         </BrowserRouter>
     );

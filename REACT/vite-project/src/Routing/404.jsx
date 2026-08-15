@@ -1,3 +1,5 @@
+import Navigation1 from "./Navigation1";
+
 function Page404(){
     return(
         <div>
