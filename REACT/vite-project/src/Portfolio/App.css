@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+  color: #171717;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+
+.hero {
+  min-height: 600px;
+  background: #111;
+  color: white;
+  padding: 30px 7%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.navbar h1 {
+  margin-right: auto;
+  font-size: 24px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero-content {
+  max-width: 800px;
+  padding: 130px 0;
+}
+
+.subtitle {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.hero-content h2 {
+  font-size: clamp(45px, 8vw, 90px);
+  line-height: 1;
+  margin-bottom: 25px;
+}
+
+.hero-content h2 span {
+  display: block;
+  color: #aaa;
+}
+
+.hero-content p {
+  max-width: 600px;
+  color: #ccc;
+  line-height: 1.7;
+}
+
+.hero-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 14px 25px;
+  background: white;
+  color: #111;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+
+
+.projects-section {
+  padding: 90px 7%;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 30px;
+  margin-bottom: 45px;
+}
+
+.section-heading h2,
+.add-section h2 {
+  font-size: 42px;
+}
+
+.search-box input {
+  width: 280px;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+.project-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.project-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+.project-content {
+  padding: 25px;
+}
+
+.category {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+.project-content h3 {
+  font-size: 26px;
+  margin: 12px 0;
+}
+
+.project-content p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.project-content button {
+  margin-top: 20px;
+  border: none;
+  background: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* FORM */
+
+.add-section {
+  padding: 90px 7%;
+  background: #e9e9e9;
+}
+
+.project-form {
+  max-width: 700px;
+  margin-top: 30px;
+  display: grid;
+  gap: 15px;
+}
+
+.project-form input,
+.project-form textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font: inherit;
+}
+
+.project-form button {
+  padding: 15px;
+  border: none;
+  background: #111;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.no-results {
+  padding: 30px 0;
+}
+
+/* FOOTER */
+
+footer {
+  padding: 30px 7%;
+  background: #111;
+  color: #aaa;
+  text-align: center;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .navbar a {
+    display: none;
+  }
+
+  .hero-content {
+    padding: 100px 0;
+  }
+
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .search-box,
+  .search-box input {
+    width: 100%;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .section-heading h2,
+  .add-section h2 {
+    font-size: 32px;
+  }
+}

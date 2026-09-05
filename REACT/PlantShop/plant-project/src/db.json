@@ -1,0 +1,25 @@
+{
+  "plants": [
+    {
+      "id": 1,
+      "name": "Monstera",
+      "image": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?w=400",
+      "price": 25.99,
+      "soldOut": false
+    },
+    {
+      "id": 2,
+      "name": "Snake Plant",
+      "image": "https://images.unsplash.com/photo-1593482892283-0fd5c2fe06e0?w=400",
+      "price": 19.99,
+      "soldOut": false
+    },
+    {
+      "id": 3,
+      "name": "Fiddle Leaf Fig",
+      "image": "https://images.unsplash.com/photo-1523049673857-eb18f1d7b578?w=400",
+      "price": 45.99,
+      "soldOut": false
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fc;
+  padding: 1rem;
+}
+
+.app {
+  max-width: 700px;
+  margin: 2rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+h1 {
+  text-align: center;
+  color: #1a1a2e;
+  margin-bottom: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.search-bar input,
+.category-filter select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e4ea;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+}
+
+.search-bar {
+  flex: 2;
+}
+
+.category-filter {
+  flex: 1;
+}
+
+.shopping-list {
+  list-style: none;
+  padding: 0;
+  margin: 1.5rem 0;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.list-item:last-child {
+  border-bottom: none;
+}
+
+.item-name {
+  font-weight: 500;
+}
+
+.item-category {
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.empty {
+  text-align: center;
+  color: #999;
+  font-style: italic;
+}
+
+.add-item-form {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid #f0f2f5;
+}
+
+.add-item-form h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  color: #1a1a2e;
+}
+
+.form-group {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.form-group input,
+.form-group select {
+  padding: 0.5rem 1rem;
+  border: 2px solid #e0e4ea;
+  border-radius: 8px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.form-group button {
+  padding: 0.5rem 1.5rem;
+  background: #4a6cf7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.form-group button:hover {
+  background: #3a56d4;
+}
+
+@media (max-width: 500px) {
+  .controls {
+    flex-direction: column;
+  }
+  .form-group {
+    flex-direction: column;
+  }
+}

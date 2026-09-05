@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "HydroSync",
+    "category": "IoT",
+    "description": "A smart water monitoring and pump control system designed for remote monitoring and automation.",
+    "image": "https://images.unsplash.com/photo-1581092921461-eab62e97a780"
+  },
+  {
+    "id": 2,
+    "title": "Plant Shop",
+    "category": "React",
+    "description": "A responsive React application for browsing and managing a collection of plants.",
+    "image": "https://images.unsplash.com/photo-1416879595882-3373a0480b5b"
+  },
+  {
+    "id": 3,
+    "title": "Weather Dashboard",
+    "category": "API",
+    "description": "A weather application that retrieves information from an external API and displays it dynamically.",
+    "image": "https://images.unsplash.com/photo-1534088568595-a066f410bcda"
+  },
+  {
+    "id": 4,
+    "title": "Online Bookstore",
+    "category": "JavaScript",
+    "description": "A web application for browsing books and interacting with a dynamic shopping interface.",
+    "image": "https://images.unsplash.com/photo-1507842217343-583bb7270b66"
+  }
+]

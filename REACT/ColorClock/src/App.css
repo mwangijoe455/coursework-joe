@@ -1,0 +1,196 @@
+
+:root {
+  /* ---------- Dark theme (default) ---------- */
+  --bg-body: linear-gradient(145deg, #0b0e1a 0%, #1a1f35 100%);
+  --clock-bg: rgba(255, 255, 255, 0.06);
+  --clock-border: 1px solid rgba(255, 255, 255, 0.07);
+  --clock-shadow: 0 30px 60px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.10);
+  --clock-shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.7);
+
+  --title-color: rgba(255, 255, 255, 0.35);
+  --time-gradient: linear-gradient(135deg, #f7f0ff 0%, #c8d6ff 100%);
+  --time-shadow: 0 0 60px rgba(120, 160, 255, 0.15);
+  --date-color: rgba(255, 255, 255, 0.55);
+  --day-color: rgba(255, 255, 255, 0.30);
+
+  --btn-bg: rgba(255, 255, 255, 0.08);
+  --btn-color: rgba(255, 255, 255, 0.70);
+  --btn-border: rgba(255, 255, 255, 0.12);
+  --btn-hover-bg: rgba(255, 255, 255, 0.18);
+
+  /* ---------- Common ---------- */
+  --font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --clock-radius: 3.5rem;
+  --clock-padding: 3rem 4rem;
+  --transition: 0.4s ease;
+}
+
+/* ---------- Light theme override ---------- */
+[data-theme="light"] {
+  --bg-body: linear-gradient(145deg, #f0f4ff 0%, #e6ecfa 100%);
+  --clock-bg: rgba(255, 255, 255, 0.75);
+  --clock-border: 1px solid rgba(255, 255, 255, 0.4);
+  --clock-shadow: 0 30px 60px rgba(0, 0, 0, 0.12), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  --clock-shadow-hover: 0 40px 80px rgba(0, 0, 0, 0.20);
+
+  --title-color: rgba(0, 0, 0, 0.35);
+  --time-gradient: linear-gradient(135deg, #2a2f4a 0%, #1a1f35 100%);
+  --time-shadow: 0 0 60px rgba(40, 60, 140, 0.10);
+  --date-color: rgba(0, 0, 0, 0.65);
+  --day-color: rgba(0, 0, 0, 0.40);
+
+  --btn-bg: rgba(0, 0, 0, 0.06);
+  --btn-color: rgba(0, 0, 0, 0.70);
+  --btn-border: rgba(0, 0, 0, 0.10);
+  --btn-hover-bg: rgba(0, 0, 0, 0.10);
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  margin: 0;
+  background: var(--bg-body);
+  transition: background var(--transition);
+}
+
+.app-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.clock-container {
+  background: var(--clock-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: var(--clock-border);
+  border-radius: var(--clock-radius);
+  padding: var(--clock-padding);
+  box-shadow: var(--clock-shadow);
+  text-align: center;
+  max-width: 750px;
+  width: 100%;
+  transition: background var(--transition), border var(--transition), box-shadow var(--transition);
+}
+
+.clock-container:hover {
+  box-shadow: var(--clock-shadow-hover);
+}
+
+.clock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.clock-title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: var(--title-color);
+  user-select: none;
+  transition: color var(--transition);
+}
+
+/* ---------- Toggle button ---------- */
+.theme-toggle {
+  background: var(--btn-bg);
+  color: var(--btn-color);
+  border: 1px solid var(--btn-border);
+  border-radius: 40px;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  transition: all 0.3s ease;
+}
+
+.theme-toggle:hover {
+  transform: scale(1.03);
+  background: var(--btn-hover-bg);
+}
+
+.time-display {
+  font-size: 4.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  background: var(--time-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: var(--time-shadow);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+  transition: background var(--transition), text-shadow var(--transition);
+}
+
+.date-display {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  color: var(--date-color);
+  margin-bottom: 0.25rem;
+  transition: color var(--transition);
+}
+
+.day-display {
+  font-size: 1.2rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--day-color);
+  margin-top: 0.6rem;
+  transition: color var(--transition);
+}
+
+@media (max-width: 550px) {
+  .clock-container {
+    padding: 2.5rem 1.8rem;
+    border-radius: 2.5rem;
+  }
+  .time-display {
+    font-size: 3.2rem;
+  }
+  .date-display {
+    font-size: 1.2rem;
+  }
+  .day-display {
+    font-size: 0.95rem;
+  }
+  .clock-header {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  .theme-toggle {
+    padding: 0.3rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .time-display {
+    font-size: 2.6rem;
+  }
+  .clock-container {
+    padding: 1.8rem 1.2rem;
+  }
+}
